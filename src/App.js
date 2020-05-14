@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Listcolors from './components/Listcolors';
+import ButtonColors from './components/Buttoncolors';
 
 
 function App() {
@@ -20,19 +20,11 @@ function App() {
   }, [])
 
   return (
-  <div className="container">
-      <p className="lead text-center">Copia un Color</p>
-      <button 
-        onClick={apiColors} 
-        type="button" 
-        className="btn btn-danger btn-lg btn-block"
-        >Colores
-        </button>
-
-        <Listcolors
+  <div className="container">      
+        <ButtonColors 
+          setColors={setColors}
           colors={colors}
-        />
-     
+        /> 
   </div>
   );
 }
