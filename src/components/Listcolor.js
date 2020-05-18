@@ -5,7 +5,7 @@ import Color from "./Color";
 
 const ListColors = ({ colors }) => {
   return (
-    <div>
+    <div className="contenido-principal">
       {colors.map(col => (
         <Color 
           key={col.id}
